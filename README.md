@@ -16,3 +16,40 @@ Notably, cards will be drawn from a simulated 52-card deck. After the initial sh
 Requirements Definition:
 
 1. Placeholder
+
+2. Does the user know the rules of 21?
+
+    -Yes: Continue to game.
+    
+    -No: display the rules of playing 21
+    
+3. We will use a 52-card deck
+
+    -13 different ranks of cards (ace, 2-10, jack, queen, king)
+    
+    -4 different suits ( clubs, diamonds, hearts, spades)
+    
+    -Each suite includes all 13 ranks of cards
+    
+      Ex, clubs(13 ranks), diamonds (13 ranks), hearts (13 ranks), spades (13 ranks)
+      
+4. Game objective: the user attempts to beat the dealer by getting a count as close to 21 as possible, without going over 21.
+
+5. The user will receive 2 cards
+
+    -Cards must be randomized
+    
+    -Create a variable “playerSum” to store the value of the player’s sum of cards.
+    
+    -Show the value of one card to the user, its  value to “playerSum”
+    
+    -Hide the other card from the user. Keep the value of the card stored.
+
+6. The dealer will play 2 cards visible to the user
+
+    -Create a variable “dealerSum” to store the value of the dealer’s sum of cards
+    
+    -Store the value of the sum of both cards to “dealerSum”
+    
+    -Output the sum for the user to see.
+
