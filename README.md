@@ -35,9 +35,9 @@ Requirements Definition:
       
 4. Game objective: the user attempts to beat the dealer by getting a count as close to 21 as possible, without going over 21.
 
-5. The user will receive 2 cards
+5. The user will initially receive 2 cards
 
-    -Cards must be randomized
+    -Cards are drawn from the top of the deck
     
     -Create a variable “playerSum” to store the value of the player’s sum of cards.
     
@@ -52,4 +52,12 @@ Requirements Definition:
     -Store the value of the sum of both cards to “dealerSum”
     
     -Output the sum for the user to see.
+    
+7. Be ready for Aces.
+
+    -Aces can be either a 1 or 11
+    
+    -User must choose upon first receiving it
+    
+    -If this is too complicated to implement, value of Ace will default to 1
 
