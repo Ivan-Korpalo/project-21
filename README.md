@@ -15,15 +15,13 @@ Notably, cards will be drawn from a simulated 52-card deck. After the initial sh
 
 Requirements Definition:
 
-1. Placeholder
-
-2. Does the user know the rules of 21?
+1. Does the user know the rules of 21?
 
     -Yes: Continue to game.
     
     -No: display the rules of playing 21
     
-3. We will use a 52-card deck
+2. We will use a 52-card deck
 
     -13 different ranks of cards (ace, 2-10, jack, queen, king)
     
@@ -33,9 +31,9 @@ Requirements Definition:
     
       Ex, clubs(13 ranks), diamonds (13 ranks), hearts (13 ranks), spades (13 ranks)
       
-4. Game objective: the user attempts to beat the dealer by getting a count as close to 21 as possible, without going over 21.
+3. Game objective: the user attempts to beat the dealer by getting a count as close to 21 as possible, without going over 21.
 
-5. The user will initially receive 2 cards
+4. The user will initially receive 2 cards
 
     -Cards are drawn from the top of the deck
     
@@ -45,7 +43,7 @@ Requirements Definition:
     
     -Hide the other card from the user. Keep the value of the card stored.
 
-6. The dealer will play 2 cards visible to the user
+5. The dealer will play 2 cards visible to the user
 
     -Create a variable “dealerSum” to store the value of the dealer’s sum of cards
     
@@ -53,11 +51,15 @@ Requirements Definition:
     
     -Output the sum for the user to see.
     
-7. Be ready for Aces.
+6. Be ready for Aces.
 
     -Aces can be either a 1 or 11
     
-    -User must choose upon first receiving it
+    -User and Dealer must choose upon first receiving it
     
     -If this is too complicated to implement, value of Ace will default to 1
+    
+7. More to come
+    
+    -This is a reminder that we are not finished yet. We must continue to add more stuff to this document.
 
