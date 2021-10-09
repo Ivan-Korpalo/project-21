@@ -1,7 +1,8 @@
 # project-21
 This is our group project for EECS 1012. We are trying to make a playable version of 21 (ie. blackjack) on a webapage. Read the README for more info.
 
-Name of team: Desperados
+Name of team: The Desperados
+
 Members of Team:
 - Carlos Dela Cruz (carlos18@my.yorku.ca), Section B lab 4
 - Ivan Korpalo (ivantk@my.yorku.ca), Section B lab 4
