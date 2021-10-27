@@ -26,13 +26,20 @@ Requirements Definition:
 
 5. The dealer will play 2 cards visible to the user after the user completed their turn. They will then draw more cards according to the algorithm.
 
-6. Once the dealer is finished, the value of the user and dealer's hands are compared. If it is higher than 21, it is automatically set to zero. A winner or tie is then declared. User is then asked if they want to play again.
+6. Once the dealer is finished, the value of the user and dealer's hands are compared. If it is higher than 21, it is automatically set to zero. A winner or tie is     then declared. User is then asked if they want to play again.
     
 7. Be ready for Aces. Aces can be either a 1 or 11. User and Dealer must choose a value upon first receiving it
     
     -If this is too complicated to implement, value of Ace will default to 1
     
-8. More to come
+8. The player will be prompted to input how much he/she will bet. The minimum and maximum limits are $20 to $500 respectively.
+
+9. After the player's bet is placed, the player receives two cards face up, and the dealer receives one card face up and one card face down
+
+10. They player can choose to stand on the two cards originally dealt to them, or they may ask the dealer for additional cards (hit), one at a time, until deciding     to stand on the total (if it is 21 or under), or goes "bust" (if it is over 21).
+
+11. After the player's turn is over, the dealers face-down card is turned up. If the total is 17 or more, it must stand. If the total is 16 or under, they must take    a card. If the dealer has an ace, and counting it as 11 would bring the total to 17 or more (but not over 21), the dealer must count the ace as 11 and stand.
+ 
+12. 
     
-    -This is a reminder that we are not finished yet. We must continue to add more stuff to this document.
 
