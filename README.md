@@ -11,7 +11,7 @@ Title: Project 21
 
 Description: Our group has chosen to make a playable game of 21. 21 is the family-friendly name for blackjack. The rules are simple. A dealer and a player are both dealt a card. They can choose to either draw a card or keep their hand. They repeat till satisfied. The goal is to finish with a hand with the highest value. If the value exceeds 21 though, the player is out of the game.
 
-Notably, cards will be drawn from a simulated 52-card deck. After the initial shuffle, card draw is deterministic. This allows you to use the skill of card-counting for future rounds. Deck is shuffled when halfway empty. You can bet “confidence points” and slowly gain leaderboard score.
+Notably, cards will be drawn from a simulated 52-card deck. After the initial shuffle, card draw is deterministic. This allows you to use the skill of card-counting for future rounds. Deck is shuffled when halfway empty. You can bet in-game money and slowly gain a virtual fortune.
 
 
 Requirements Definition:
@@ -42,4 +42,6 @@ Requirements Definition:
     
 13.	Before the user can receive their starting money, they are first asked to input a name.
 
-14.	If the user refuses to play again and instead chooses to quit, their name and the remaining amount of money is saved to a text file in the server.
+14. If a player has less than $20 in their wallet they will not be allowed to start a new round. They will have no choice but to quit
+
+15. There will be a counter displaying the highest amount of money they managed to hold in a single session.
