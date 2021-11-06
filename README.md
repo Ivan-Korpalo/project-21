@@ -45,3 +45,7 @@ Requirements Definition:
 14. If a player has less than $20 in their wallet they will not be allowed to start a new round. They will have no choice but to quit
 
 15. There will be a counter displaying the highest amount of money they managed to hold in a single session.
+
+Project Design:
+
+![Wireframe](/Wireframe.drawio.png)
