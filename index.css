@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  background-color:green;
+  overflow:auto;
+}
+
+body {
+	text-align:center;
+}
+
+div {
+	border:1px solid grey;
+	margin-top:20px;
+}
