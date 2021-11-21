@@ -15,8 +15,9 @@
     <h1> Deck Testing mode </h1>
 	<nav>
   	<button onclick="drawcard()">Draw a card</button>
-	<button onclick="shuffle()">Shuffle the deck (Does not work yet)</button>
+	<button onclick="gamedeck.shuffle()">Shuffle the deck</button>
 	<button onclick="reset()">Reinsert discard, then shuffle (Does not work yet)</button>
+	<button onclick="gamedeck.view(gamedeck.deck)">View cards (debug)</button>
 	</nav>
   </header>
 
