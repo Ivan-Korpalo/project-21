@@ -34,12 +34,24 @@ function Deck(){
    this.deck = protodeck;
    this.discard = [];//This is an empty discard pile, cards from hands are placed here, after a round.
 
-   //Define a method to shuffle the deck based on the amount of existing cards. A mutator method
-   //Fill out later
-
    //Define a method to draw a card. Cards are drawn starting from the highest index
    this.draw= function(){
       return this.deck.pop();
+   };
+   
+   //Define a method to shuffle the deck based on the amount of existing cards. A mutator method
+   this.shuffle= function(){
+      //Create a temporary buffer deck that will be filled with random cards
+      var temp= [];
+
+      //randomly select a card from the deck, remove it and insert it into the buffer deck.
+      while (this.deck.length > 0){
+         var choice = Math.floor(Math.random()*this.deck.length);
+         temp.push(this.deck.splice(choice, 1)[0]);//Splice returns a single element array. The [0] allows me to access and insert it
+      };
+
+      //Swap the now empty deck with the now filled buffer
+      this.deck = temp;
    };
 
    //A debug method that lists every card and value in the deck or discard in the order they will be drawn
