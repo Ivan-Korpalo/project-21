@@ -1,14 +1,263 @@
+html {/*This line ended up being the proverbial coconut of my code. Do not delete it!*/
+  height: 100%;
+  background-color:green;
+}
+
 * {
   box-sizing: border-box;
-  background-color:green;
+  /*background-color:green;*/
   overflow:auto;
 }
 
-body {
-	text-align:center;
+#dealervalue {
+  display: none;
 }
 
-div {
-	border:1px solid grey;
-	margin-top:20px;
+#interface button {
+  font-size: 1.5rem;
+  width:5rem;
+  display:none;
+}
+
+body {
+  margin:0;
+	text-align:center;
+  height:100%;
+}
+
+/*Carlos Work CSS start*/
+#title {
+  text-align: center;
+  font-size: larger;
+}
+#splash h1 {
+  color: gold;   
+  font-size: 3vw;
+}
+
+.input {
+  margin: 2vw;
+}
+
+#id01 *{
+  overflow: hidden; /*Removes ugly scroll bars*/
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  
+  /*Covers up the main page*/
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+
+  /*background-color: #474e5d;*/
+  background-color: rgba(179,63,38,255);
+  padding-top: 50px;
+}
+  
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(179,63,38,255);
+  
+  z-index: 1;
+  
+  margin: 5% auto 15% auto; 
+  /*border: 1px solid #888;*/
+  width: 80%;
+}
+
+
+/*Carlos Work CSS End*/
+
+#current{
+  display:none;
+}
+
+/*The betting interface*/
+#betting{
+  position:absolute;
+  top:40%;
+  left:38%;
+}
+
+#betting *{
+  color:gold;
+}
+
+#betting button, #betting input{
+  color:black;
+}
+
+#lefttext{
+  float:left;
+}
+
+#righttext{
+  float:right;
+}
+
+
+#main {
+  color:gold;
+  position: static;
+  width:100%;
+  /*height: 70%;*/
+  display:none;
+
+}
+
+h2 {
+  color:black;
+}
+
+#button {
+  color:black;
+}
+
+#deck{
+  float: left;
+}
+
+#discard{
+  float: right;
+}
+
+#ace{
+  vertical-align: middle;
+  margin-left:1rem;
+  margin-right:1rem;
+}
+
+#value{
+  /*float:right;*/
+  vertical-align: middle;
+  display:none;
+
+}
+
+header {
+  display:none;
+  /*\background-color: darkslategray;*/
+  position: static;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  /*height:15%;*/
+}
+
+/*
+header h1 {
+  background-color: darkslategray;
+}*/
+
+header div {
+  background-color: darkslategray;
+	/*margin-top:3px;*/
+  border-bottom:3px solid grey;
+}
+
+header nav button {
+  position: static;
+  /*bottom: 30;*/
+  text-align: center;
+  display: inline;
+}
+
+footer {
+  display:none;
+  /*border-top:3px solid grey;*/
+  background-color: transparent;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  width: 100%;  
+  height: 8rem;
+  z-index: -1;
+}
+
+footer *{
+  color: gold;
+  background-color: transparent;
+  padding-top: 15px;
+}
+
+
+#instructions {
+  display: none;
+}
+
+#footerbutton {
+  position:absolute;
+  top:0;
+  text-align: center;
+  padding-top: 0px;
+  display: none;
+  color: black;
+}
+
+#footername, #footermoney {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footermoney {
+  float: left;
+}
+
+#footermax {
+  float: right;
+  margin-right: 3rem;
+}
+
+#instructions *{
+  border-style:none;
+}
+
+#instructions p{
+  text-align:justify;
+  color:white;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#pictures{
+  overflow:visible;
+  text-align:middle;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#pictures img{
+  vertical-align: middle;
+}
+
+#pictures div{
+  vertical-align: middle;
+}
+
+#ltutorial {
+  color:white;
+  display:inline;
+  float:left;
+}
+
+#mtutorial {
+  color:white;
+  vertical-align: middle;
+  float:left;
+  display:inline;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#rtutorial {
+  color:white;
+  display:inline;
+  float:left;
 }
