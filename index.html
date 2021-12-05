@@ -12,15 +12,80 @@
 <body>
 
   <header>
-    <h1> Deck Testing mode </h1>
+    <div id=headerdiv>
+    <h1>Desperado Blackjack</h1>
+    </div>
 	<nav>
-  	<button onclick="drawcard()">Draw a card</button>
-	<button onclick="gamedeck.shuffle()">Shuffle the deck</button>
-	<button onclick="reset()">Reinsert discard, then shuffle (Does not work yet)</button>
-	<button onclick="gamedeck.view(gamedeck.deck)">View cards (debug)</button>
+  	<button id="headerbutton" onclick="toggleHelp()">Need Help?</button>
 	</nav>
+
+  <div id="instructions">
+  <p id="p1">Blackjack is an easy game to play. Your goal is to collect cards in your hand so you can get as close to 21 as possible. But don't go over, if your hand value exceeds 21, then you automatically lose!</p>
+  <p id="p2">Every card is worth a certain amount of points. Cards with numbers are worth as many points as their numbers, with exception to the Ace, while the royals are worth 10 points each. A jack is worth as much as a king, and as a matter of fact, so is a ten!</p>
+  <p id="p3">You are given two cards to start with (a hand that will never kill you right off the bat), and are then given a chance to grab more cards from the deck. "Hit" the button with the appropriate name to take your shot at fame, or choose to "stay" and keep both risk, and opportunity away.</p>
+  <p id="p4">If any of those roads lead to you drawing an ace, you'll be given an interesting choice. It can be a 1 or an 11, it's up to you to decide. But know that if you regret it, you won't be able to change your mind</p>
+  <p id="p5">Ultimately, your goal is have a better score than the dealer. So you don't have have to torture yourself trying to get 21 each and every time. And that's all I've got for you. Here's nice picture reference of all the cards and their points values.</p>
+  <div id="pictures"><div id="ltutorial"><h3>1...10</h3><img src="images/cards/Three_Diamonds.png"></div><div id="mtutorial"><h3>10</h3><img src="images/cards/King_Clubs.png"></div><div id="rtutorial"><h3>1 or 11</h3><img src="images/cards/Ace_Spades.png"></div></div></div>
   </header>
 
-  <footer>(c) Authors of this web page: <span>Ivan Korpalo, Carlos Dela Cruz</span> </footer>
+  <div id="splash">
+    <div id="title">
+        <h1> EECS 1012 project</h1>
+        <img src="images/blackjack.png">        
+    </div>
+
+  <div class="input">
+
+        <input type="text" id="myName" value="Enter your name...">
+        <button onclick="enterName()">enter</button>
+
+	</div>
+
+
+  <div id="id01" class="modal">
+    <div class="modal-content">
+      <div class="container">
+        <h1>Shuffling deck</h1>
+        <h2 id="shufflename"></h2>
+        <img src="images/cardback_shuffleintro.gif">
+      </div>
+  </div>
+  </div>
+
+  <div>(c) Authors of this web page: <span>Ivan Korpalo, Carlos Dela Cruz</span> </div>
+</div>   
+  
+  <div id="current">
+  <div id="main">
+    <div id="deck"><h2>Deck</h2><img src="images/cards/back.png"></div>
+    <div id="discard"><h2>Discard</h2><!--<img src="images/cards/emptydiscard.png">--></div>
+  </br>
+    <div id="dealerhand"><img src="images/cards/empty.png"><!--<img src="images/cards/back.png"> <img src="images/cards/back.png"> <img src="images/cards/Ace_Spades.png">--></div>
+  </br>
+    <div id="interface">
+      <p id=dealervalue></p><br>
+      <p id=toptext>Pot: $</p>
+      <button id="leftbutt" onclick="playerHit()">Hit!</button><img id=ace src="images/cards/empty.png"><button id="rightbutt" onclick="playerStay()">Stay!</button>
+    
+    </div>
+  </br>
+    <div id="playerhand"><!--<img src="images/cards/Ace_Spades.png"> <img src="images/cards/Ace_Spades.png"> <img src="images/cards/Ace_Spades.png">--></div><div id=value>Hand Value: </div>
+  </div>
+
+  <div id= "betting">
+    <span id="lefttext">Min: $20</span><span id="righttext">Max: $500</span>
+    <br>
+    <label for="bet">Bet: </label>
+    <input type="number" id="bet" min="20" max="500"><button onclick= "makeBet()">Go!</button>
+  </div>
+</div>
+
+  <footer>
+    <button id="footerbutton" onclick="toggleHelp()">Close Help</button>
+    <div id="footername">Name: <span id="name"></span></div>
+    <div id="footermoney">Current: $<span id="money"></span></div>    <div id="footermax">Highest: $<span id="max"></span></div>
+    
+  </br>
+    <p id=credits>(c) Authors of this web page: <span>Ivan Korpalo, Carlos Dela Cruz</span></p> </footer>
 </body>
 </html>
